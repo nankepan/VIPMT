@@ -51,7 +51,7 @@ python train.py --group 1 --batch_size 4
 python test.py --group 1
 ```
 
-# Usage
+# References
 Part of the code is based upon:
-IPMT:(https://github.com/LIUYUANWEI98/IPMT)
-DANet:(https://github.com/scutpaul/DANet)
+[IPMT](https://github.com/LIUYUANWEI98/IPMT)
+[DANet](https://github.com/scutpaul/DANet)
