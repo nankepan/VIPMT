@@ -17,19 +17,19 @@ pip install easydict imgaug
 2. Put the dataset in the `./data` folder.
 ```
 data
-©¸©¤ Youtube-VOS
-    ©¸©¤ train
-        ©À©¤ Annotations
-        ©À©¤ JPEGImages
-        ©¸©¤ train.json
-©¸©¤ VSPW_480p
-    ©¸©¤ data
+â””â”€ Youtube-VOS
+    â””â”€ train
+        â””â”€ Annotations
+        â””â”€ JPEGImages
+        â””â”€ train.json
+â””â”€ VSPW_480p
+    â””â”€ data
 ```
 3. Install [cocoapi](https://github.com/youtubevos/cocoapi) for Youtube-VIS.
 4. Download the ImageNet pretrained [backbone](https://drive.google.com/file/d/1PIMA7uG_fcvXUvjDUL7UIVp6KmGdSFKi/view?usp=sharing) and put it into the `pretrain_model` folder.
 ```
 pretrain_model
-©¸©¤ resnet50_v2.pth
+â””â”€ resnet50_v2.pth
 ```
 5. Update `config/config.py`.
 
