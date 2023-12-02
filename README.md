@@ -4,7 +4,7 @@ This is the implementation of our paper: Multi-grained Temporal Prototype Learni
 ## Abstract
 Few-Shot Video Object Segmentation (FSVOS) aims to segment objects in a query video with the same category defined by a few annotated support images. However, this task was seldom explored. In this work, based on IPMT, a state-of-the-art few-shot image segmentation method that combines external support guidance information with adaptive query guidance cues, we propose to leverage multi-grained temporal guidance information for handling the temporal correlation nature of video data. We decompose the query video information into a clip prototype and a memory prototype for capturing local and long-term internal temporal guidance, respectively. Frame prototypes are further used for each frame independently to handle fine-grained adaptive guidance and enable bidirectional clip-frame prototype communication. To reduce the influence of noisy memory, we propose to leverage the structural similarity relation among different predicted regions and the support for selecting reliable memory frames. Furthermore, a new segmentation loss is also proposed to enhance the category discriminability of the learned prototypes. Experimental results demonstrate that our proposed video IPMT model significantly outperforms previous FSVOS models on two benchmark datasets.
 
-# Environment
+## Environment
 
 ```
 conda create -n VIPMT python=3.6
@@ -15,8 +15,8 @@ pip install easydict imgaug
 ```
 
 
-# Usage
-## Preparation
+## Usage
+### Preparation
 
 1. Download the 2019 version of [Youtube-VIS](https://youtube-vos.org/dataset/vis/) dataset.
 1. Download [VSPW 480P](https://github.com/sssdddwww2/vspw_dataset_download) dataset.
@@ -39,13 +39,13 @@ pretrain_model
 ```
 5. Update `config/config.py`.
 
-## Training
+### Training
 
 ```
 python train.py --group 1 --batch_size 4
 ```
 
-## Inference
+### Inference
 
 ```
 python test.py --group 1
